@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showman</title>
+
+
+    <!-- css연결 -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/342b696cc0.js" crossorigin="anonymous"></script>
+
+    <!-- 자바연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+    
+    <section>
+        <article>
+            <div class="art_">
+                    <div class="actor_box">
+                        <div class="big">
+                            <span class="neon"></span>
+                            <span class="head_l"><img src="img/headlight_left.png" alt=""></span>
+                            <span class="head_r"><img src="img/headlight_right.png" alt=""></span>
+                            
+                            <div class="big_inner">
+                                <span class="on">
+                                    <img src="img/real01.png" alt="">
+                                    <p>P.T BARNUM / HUGH JACKMAN <br>
+                                        영화의 모티브가 된 인물이자 쇼비즈니스의 창시자</p>
+                                </span>
+                                <span>
+                                    <img src="img/real02.png" alt="">
+                                    <p>CHARITY  /  MICHELLE WILLIAMS <br>
+                                        바넘의 아내</p>
+                                </span>
+                                <span>
+                                    <img src="img/real03.jpg"  alt="">
+                                    <p>PHILIP CARLYLE / ZAC EFRON <br>
+                                    바넘의 동업자이자 후계자</p>
+                                </span>
+                                <span>
+                                    <img src="img/real04.jpg" alt="">
+                                    <p>LETTY LUTZ / KEALA SETTLE <br>
+                                        여성임에도 불구하고 털이 많았던 가수</p>
+                                </span>
+                            </div> 
+                            <div class="big_inner_">
+                                <span>
+                                    <img src="img/real05.jpg" alt="">
+                                    <p>JENNY RIND / REBECCA FERGUSON <br>
+                                    스웨덴의 나이팅게일이라고 불리우는 소프라노 가수</p>
+                                </span>
+                                <span>
+                                    <img src="img/real06.jpg" alt="">
+                                    <p>TOM THUMB / SAM HUMPHREY <br>
+                                    가장 인기가 많아 빅토리아 여왕에게 초청 받은 인물</p>
+                                </span>
+                                <span>
+                                    <img src="img/real07.jpg" alt="">
+                                    <p> ANNE WHEELER / ZENDAYA <br>
+                                    가상의 인물로서 매력적인 서커스 단원</p>
+                                </span>
+                                <span>
+                                    <img src="img/real08.jpg" alt="">
+                                    <p>많은 비중을 차지하진 않았지만 <br>
+                                    실제 다모증 환자의 공연은 인기가 많았다고 한다.</p>
+                                </span>
+                            </div>
+                        <div class="frame"></div>
+                            
+                        </div>
+                        <div class="small">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+            </div>
+            <div>
+                <a href="index.html"><h2>logo</h2></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_1.html">INFO</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="#">ACTOR</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_3.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_4.html">VIDEO</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
+    <script>
+$(document).ready(function(){
+
+    // .small ul li의 순번을 찾고 해당 순번에 맞게 big_inner 의 span이 나타나라
+    $(".small>ul:nth-child(1) li").click(function(){
+
+        let a =$(this).index();
+        console.log(a)
+
+        $(".big_inner>span").removeClass("on")
+        $(".big_inner_>span").removeClass("on")
+        $(".big_inner>span").eq(a).addClass("on")
+
+    })
+    $(".small>ul:nth-child(2) li").click(function(){
+
+        let b =$(this).index();
+        $(".big_inner>span").removeClass("on")
+        $(".big_inner_>span").removeClass("on")
+        $(".big_inner_>span").eq(b).addClass("on")
+
+    })
+
+
+    })
+    </script>
+
+
+    
+    
+</body>
+</html>

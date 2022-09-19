@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showman</title>
+
+    <!-- 스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+
+</head>
+<body>
+    
+    <header>
+
+            <div class="head">
+                <img class="bg01" src="img/Free Gold Overlay 9.png" alt=""></span>
+                <img class="bg02" src="img/Free Gold Overlay 4.png" alt=""></span>
+                <span><img src="img/headlight.png" alt=""></span>
+                <h1>
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </h1>
+                
+            </div>
+
+            <div class="main">
+                <span id="icon"></span>
+                <div>
+                    <h2><a href="#">logo</a></h2>
+                </div>
+                <span class="mainimg">
+                    <img src="img/mainact.png" alt="">
+                </span>
+                <span class="mainimg_2">
+                    <img src="img/mainact02.png" alt="">
+                </span>
+                <img src="img/sub_line.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="exsub_1.html">INFO</a></li>
+                        <li><a href="exsub_2.html">ACTOR</a></li>
+                        <li><a href="exsub_3.html">GALLERY</a></li>
+                        <li><a href="exsub_4.html">VIDEO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+    
+    <footer>
+        <p>본 사이트는 교육용 포트폴리오 사이트로 상업용으로 사용되지 않았습니다. <br>
+        <em>COPYright &copy; JJEONGE.202208.All Rights Reserved.</em></p>
+    </footer>
+
+    
+
+<script>
+$(document).ready(function(){
+
+    // .head h1 를 click 했을 때  .head가 사라지고, .main h2 클릭했을 때 나타나라.
+    $(".head h1").click(function(){
+
+        $(".head").css({"z-index":"-1"} , {"transition":"all 0.8s"})
+    })
+    $(".main h2").click(function(){
+
+        $(".head").css({"z-index":"5"} , {"transition":"all 0.8s"})
+    })
+
+    // .head 에서 마우스가 움직일때, 이미지(.bg01 / .bg02)가 반응하여 움직여라.
+    $(".head").mousemove(function(e){
+
+        let x = e.pageX
+        let y = e.pageY
+
+        // 나누는 수치와 움직임은 반비례 (수치 클 움직임 작)
+        $(".bg01").css({"top": 0-(y/20) , "left": 0-(x/30)})
+        $(".bg02").css({"top": 0-(y/20) , "right": 0-(x/30)})
+
+    })
+
+    $(".mainimg").mousemove(function(e){
+
+        let x = e.offsetX
+        let y = e.offsetY
+
+        console.log(x);
+
+        $(".mainimg img").css({"top": 0-(y/30) , "left": 0-(x/40)})
+
+    })
+
+
+    // .main li 에 마우스가 들어갔을 때 높이값을 찾아 #icon 이 이동해라.
+    $(".main li").mouseenter(function(e){
+
+        let ot = $(this).offset().top;
+        console.log(ot);
+
+        $('#icon').css({'top':ot})
+
+    })
+
+
+
+
+    
+
+    
+
+
+})
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1048 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Gothic&family=Permanent+Marker&display=swap');
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Nanum Gothic', sans-serif; 
+font-family: 'Permanent Marker', cursive;*/
+
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #E2C549;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+    color: #E2C549;
+}
+
+
+
+
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* head설정 */
+header .head {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #041830;
+    z-index: 5;
+}
+
+.head h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    background-image: url(img/sub_icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    line-height: 6;
+    margin-top: 200px;
+    transition: all 1.2s;
+    position: relative;
+
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+    transition: all 0.8s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(90deg) rotateX(0);
+    }
+
+    to {
+        transform: rotateY(-90deg) rotateX(30deg);
+    }
+}
+
+
+
+.head h1 img {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+
+.head>span {
+    position: absolute;
+    top: -10%;
+    left: 24%;
+    opacity: 0.6;
+}
+
+/* head 움직이는 배경 */
+
+.head>img {
+    position: absolute;
+    width: 1400px;
+}
+
+.head .bg01 {
+    top: 0;
+    left: 0;
+}
+
+.head .bg02 {
+    top: 0;
+    right: 0;
+}
+
+
+
+
+/* main 설정 */
+header .main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+}
+
+.main>div {
+    width: 80%;
+    height: 100%;
+}
+
+.main>div h2 {
+    width: 500px;
+    height: 300px;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: all 1.2s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.main nav {
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.main ul {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 55%;
+    right: 0;
+    margin-top: -300px;
+}
+
+.main li {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main li a {
+    display: block;
+    color: #E2C549;
+    font-size: 26px;
+    padding-top: 35px;
+}
+
+
+.main li:hover {
+    background-color: rgba(225, 225, 225, 0.3);
+    transition: all 0.5s;
+}
+
+.main>img {
+    position: absolute;
+    right: 18%;
+    top: 0;
+    height: 100%;
+}
+
+#icon {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/menu_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 16%;
+    z-index: 2;
+    top: 0;
+    transition: all 0.8s;
+}
+
+
+/* mainimg 설정 */
+.mainimg {
+    position: absolute;
+    top: 31%;
+    left: 37%;
+    width: 500px;
+    height: 600px;}
+.mainimg img {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 10%;}
+
+.mainimg_2 {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: -10%;
+    left: 25%;}
+.mainimg_2 img {position: absolute;
+    width: 300px;
+    height: auto;
+    animation: move 8s infinite linear;}
+
+@keyframes move {
+
+    0% {left: 0%;
+        transform: scaleX(1);}
+    50% {left: 250%;
+        transform: scaleX(-1);}
+    100% {left: 0%;}
+}
+
+/* article 설정 -------------------------------------------------------------------- */
+article {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.art {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+}
+
+.art_ {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/back02.jpg);
+    background-size: cover;
+    background-position: 0 -100px;
+    position: absolute;
+}
+
+article>div h2 {
+    width: 300px;
+    height: 150px;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: all 1.2s;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+
+article>nav {
+    width: 1440px;
+    height: 100px;
+    position: relative;
+    top: 1%;
+    left: 50%;
+    margin-left: -720px;
+}
+
+article ul {
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    right: 0;
+    position: absolute;
+    justify-content: space-around;
+}
+
+article li {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+article li .icon {
+    display: block;
+    width: 200px;
+    height: 50px;
+    opacity: 0;
+    transition: all 0.8s;
+    margin-bottom: 10px;
+}
+
+article a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+article li:hover .icon {
+    opacity: 1;
+}
+
+
+/* article 1 (info) 설정----------------------------------------------------------- */
+/* info_box 설정 */
+.info_box {
+    position: absolute;
+    width: 1440px;
+    height: 600px;
+    background-image: url(img/sub04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 15%;
+    left: 50%;
+    margin-left: -720px;
+    display: flex;
+}
+
+
+/* poster 설정 */
+.poster {
+    width: 35%;
+    position: relative;
+}
+
+.poster p {
+    position: absolute;
+    top: 13%;
+    left: 51%;
+}
+
+.poster i {
+    position: absolute;
+    color: #E2C549;
+    font-size: 25px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.poster i:nth-child(1) {
+    left: -60px;
+}
+
+.poster i:nth-child(2) {
+    left: 70px;
+}
+
+.poster_box {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    top: 20%;
+    left: 25%;
+}
+
+.poster_inner {
+    position: absolute;
+    width: 900px;
+    height: 400px;
+}
+
+.poster_inner ul {
+    width: 300px;
+    height: 100%;
+    position: relative;
+}
+
+.poster_inner li {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    left: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.poster li:nth-child(1) {
+    left: 0;
+    background-image: url(img/poster01.jpg);
+}
+
+.poster li:nth-child(2) {
+    background-image: url(img/poster02.jpg);
+}
+
+.poster li:nth-child(3) {
+    left: 200%;
+    background-image: url(img/poster03.jpg);
+}
+
+
+/* infor 설정 */
+.infor_txt {
+    width: 65%;
+    position: relative;
+}
+
+.infor_txt h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.infor_txt h4 {
+    position: absolute;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    opacity: 0.1;
+    font-size: 30px;
+    text-align: center;
+    top: 13%;
+    left: 30%;
+    transform: rotate(-15deg);
+}
+
+.infor_txt .txt {
+    position: absolute;
+    top: 35%;
+    left: 17%;
+    text-align: center;
+}
+
+.infor_txt p {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+
+/* article 2 (ACTOR) 설정----------------------------------------------------------- */
+/* actor_box 설정 */
+.actor_box {
+    position: absolute;
+    width: 1440px;
+    height: 600px;
+    bottom: 15%;
+    left: 50%;
+    margin-left: -720px;
+    display: flex;
+}
+
+.big {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.small {
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* .big 설정 */
+.big .neon {
+    position: absolute;
+    width: 360px;
+    height: 130px;
+    background-image: url(img/sub01.png);
+    background-size: cover;
+    top: 0;
+    left: 7%;
+}
+
+.big .frame {
+    width: 360px;
+    height: 450px;
+    background-image: url(img/sub02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 7%;
+    left: 8%;
+    z-index: 10;
+}
+
+.big_inner {
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    bottom: 11%;
+    left: 15%;
+    z-index: 5;
+}
+
+.big_inner>span {
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.big_inner>span>img {
+    width: 260px;
+    height: 360px;
+    position: absolute;
+    top: 3%;
+    left: 6%;
+    object-fit: cover;
+}
+
+.big_inner>span>p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.big_inner>span.on {
+    opacity: 1;
+
+}
+
+.big_inner_ {
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    bottom: 11%;
+    left: 15%;
+
+}
+
+.big_inner_>span {
+    width: 300px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.big_inner_>span>img {
+    width: 260px;
+    height: 360px;
+    position: absolute;
+    top: 3%;
+    left: 6%;
+    object-fit: cover;
+}
+
+.big_inner_>span>p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.big_inner_>span.on {
+    opacity: 1;
+}
+
+.head_l {
+    position: absolute;
+    bottom: -40%;
+    left: -65%;
+}
+
+.head_r {
+    position: absolute;
+    bottom: -40%;
+    left: -14%;
+}
+
+
+/* .small 설정 */
+.small ul:nth-child(1) {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    top: 0;
+    left: 50%;
+    margin-left: -450px;
+}
+
+.small ul:nth-child(2) {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -450px;
+}
+
+.small li {
+    width: 210px;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.small ul:nth-child(1) li:nth-child(1) {
+    background-image: url(img/actor001.png);
+}
+
+.small ul:nth-child(1) li:nth-child(2) {
+    background-image: url(img/actor002.png);
+}
+
+.small ul:nth-child(1) li:nth-child(3) {
+    background-image: url(img/actor003.png);
+}
+
+.small ul:nth-child(1) li:nth-child(4) {
+    background-image: url(img/actor004.png);
+}
+
+
+.small ul:nth-child(2) li:nth-child(1) {
+    background-image: url(img/actor005.png);
+}
+
+.small ul:nth-child(2) li:nth-child(2) {
+    background-image: url(img/actor006.png);
+}
+
+.small ul:nth-child(2) li:nth-child(3) {
+    background-image: url(img/actor007.png);
+}
+
+.small ul:nth-child(2) li:nth-child(4) {
+    background-image: url(img/actor008.png);
+}
+
+
+.small li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.8s;
+}
+
+
+/* article 3 (GALLERY) 설정----------------------------------------------------------- */
+/* gallery_box 설정 */
+.gallery_box {
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    bottom: 13%;
+    left: 50%;
+    margin-left: -600px;
+    display: flex;
+}
+
+.gallery {
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+.photo {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* .gallery 설정 */
+.gallery_inner {
+    width: 750px;
+    height: 450px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -350px;
+    background-color: #041830;
+}
+
+.gallery_inner>p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.8s;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.gallery_inner>p.on {
+    opacity: 1;
+}
+
+.gallery_inner>p:nth-child(1) {
+    background-image: url(img/gallery01.jpg);
+}
+
+.gallery_inner>p:nth-child(2) {
+    background-image: url(img/gallery02.jpg);
+}
+
+.gallery_inner>p:nth-child(3) {
+    background-image: url(img/gallery03.jpg);
+}
+
+.gallery_inner>p:nth-child(4) {
+    background-image: url(img/gallery04.jpg);
+}
+
+.gallery_inner>p:nth-child(5) {
+    background-image: url(img/gallery05.jpg);
+}
+
+.gallery_inner>p:nth-child(6) {
+    background-image: url(img/gallery06.jpg);
+}
+
+
+.gallery>span {
+    position: absolute;
+    width: 130%;
+    height: 105%;
+    left: -10%;
+    top: -5%;
+    background-image: url(img/sub03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+/* .photo 설정 */
+.photo_bg {
+    width: 300px;
+    height: 550px;
+    position: absolute;
+    background-image: url(img/sub05.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    right: 0;
+    bottom: 0;
+}
+
+.photo_bg>p {
+    position: absolute;
+    top: 12%;
+    left: 34%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.photo_inner>p {
+    width: 80px;
+    height: 80px;
+    background-color: #E2C549;
+    position: absolute;
+    top: 43%;
+    left: 32%;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.photo_inner>p:nth-child(1) {
+    background-image: url(img/gallery01.jpg);
+}
+
+.photo_inner>p:nth-child(2) {
+    background-image: url(img/gallery02.jpg);
+    left: 63%;
+}
+
+.photo_inner>p:nth-child(3) {
+    background-image: url(img/gallery03.jpg);
+    top: 60%;
+}
+
+.photo_inner>p:nth-child(4) {
+    background-image: url(img/gallery04.jpg);
+    top: 60%;
+    left: 63%;
+}
+
+.photo_inner>p:nth-child(5) {
+    background-image: url(img/gallery05.jpg);
+    top: 77%;
+}
+
+.photo_inner>p:nth-child(6) {
+    background-image: url(img/gallery06.jpg);
+    top: 77%;
+    left: 63%;
+}
+
+.photo_neon {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    top: 43%;
+    left: 32%;
+    z-index: 10;
+}
+
+.photo_neon>img {
+    width: 240px;
+    height: 240px;
+    object-fit: conver;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.photo_neon>img:hover {
+    opacity: 1;
+}
+
+.photo_neon>img:nth-child(1) {
+    top: -27%;
+    left: -39%;
+}
+
+.photo_neon>img:nth-child(2) {
+    top: -27%;
+    left: 18%;
+}
+
+.photo_neon>img:nth-child(3) {
+    top: 8%;
+    left: -39%;
+}
+
+.photo_neon>img:nth-child(4) {
+    top: 8%;
+    left: 18%;
+}
+
+.photo_neon>img:nth-child(5) {
+    top: 42%;
+    left: -39%;
+}
+
+.photo_neon>img:nth-child(6) {
+    top: 42%;
+    left: 18%;
+}
+
+/* 헤드라이트설정 */
+.head_le {
+    position: absolute;
+    bottom: -13%;
+    left: 5%;
+    transform: rotate(10deg);
+}
+
+.head_ri {
+    position: absolute;
+    bottom: -13%;
+    left: 42%;
+    transform: rotate(-10deg);
+}
+
+/* article 4 (VIDEO) 설정----------------------------------------------------------- */
+/* video_box 설정 */
+.video_box {
+    position: absolute;
+    width: 1000px;
+    height: 680px;
+    bottom: 8%;
+    right: 15%;
+}
+
+.video {
+    width: 900px;
+    height: 520px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 50%;
+    margin-left: -450px;
+    background-image: url(img/movie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video video {
+    position: absolute;
+    width: 830px;
+    height: 370px;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0;
+    top: 15%;
+    left: 4%;
+    transition: all 0.8s;
+    z-index: 10;
+}
+
+.video video.on {
+    opacity: 1;
+    z-index: 20;
+}
+
+
+.video_thum {
+    width: 1000px;
+    height: 140px;
+    position: relative;
+}
+
+
+.video_thum ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.video_thum li {
+    width: 20%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+}
+
+.video_thum i {
+    position: absolute;
+    top: 38%;
+    left: 45%;
+    font-size: 30px;
+    color:#E2C549;
+    z-index: 15;
+    transition: all 0.8s;
+}
+
+.video_thum li img {
+    width: 100%;
+    height: 100%;
+}
+
+.video_thum li:nth-child(1) {
+    background-image: url(img/thum01.png);
+}
+
+.video_thum li:nth-child(2) {
+    background-image: url(img/thum02.png);
+}
+
+.video_thum li:nth-child(3) {
+    background-image: url(img/thum03.png);
+}
+
+.video_thum li:nth-child(4) {
+    background-image: url(img/thum04.png);
+}
+
+.video_thum li:nth-child(5) {
+    background-image: url(img/thum05.png);
+}
+
+.video_thum li:hover img {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* video_img 설정 */
+.video_img {
+    width: 1000px;
+    height: 800px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.video_img>img {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.video_img>img:nth-child(1) {
+    bottom: -10%;
+    left: -5%;
+}
+.video_img>img:nth-child(2) {
+    width: 105%;
+    left: 22%;
+    bottom: -14%;
+    transition: all 0.8s;
+    animation: ani 1.5s infinite;
+}
+
+@keyframes ani {
+    0%{opacity: 0.8;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
+/* article 5 (AWARD) 설정----------------------------------------------------------- */
+/* award_box 설정 */
+
+
+
+
+
+
+
+
+
+
+

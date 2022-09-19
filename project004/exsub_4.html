@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showman</title>
+
+
+    <!-- css연결 -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/342b696cc0.js" crossorigin="anonymous"></script>
+
+    <!-- 자바연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+    
+    <section>
+        <article>
+            <div class="art">
+                <div class="video_box">
+                    <div class="video">
+                        <video class="on" controls>
+                            <source src="img/video01.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="img/video02.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="img/video03.mp4" type="video/mp4">
+                        </video>
+                        <video  controls>
+                            <source src="img/video04.mp4" type="video/mp4">
+                        </video>
+                        <video  controls>
+                            <source src="img/video05.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video_thum">
+                        <ul>
+                            <li>
+                                <img src="img/sub08.png" alt="">
+                            </li>
+                            <li>
+                                <img src="img/sub08.png" alt="">
+                            </li>
+                            <li>
+                                <img src="img/sub08.png" alt="">
+                            </li>
+                            <li>
+                                <img src="img/sub08.png" alt="">
+                            </li>
+                            <li>
+                                <img src="img/sub08.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="video_img">
+                    <img src="img/sub09.png" alt="">
+                    <img src="img/sub10.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <a href="index.html"><h2>logo</h2></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_1.html">INFO</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_2.html">ACTOR</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_3.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="#">VIDEO</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
+    <script>
+    $(document).ready(function(){
+
+    // .video_thum li 순번을 찾고 클릭시 .video video .on 값을 주어라.
+    $(".video_thum li").click(function(){
+
+    let a=$(this).index();
+    console.log(a)
+
+        $(".video video").removeClass("on")
+        $(".video video").eq(a).addClass("on")
+
+    })
+    })
+
+
+
+    </script>
+
+
+    
+    
+</body>
+</html>

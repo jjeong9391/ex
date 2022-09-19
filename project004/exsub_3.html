@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showman</title>
+
+
+    <!-- css연결 -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/342b696cc0.js" crossorigin="anonymous"></script>
+
+    <!-- 자바연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+    
+    <section>
+        <article>
+            <div class="art">
+                
+                    <div class="gallery_box">
+                        <div class="gallery">
+                            <div class="gallery_inner">
+                                <p class="on"></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="photo">
+                            <span class="photo_bg">
+                                <p>PHOTO <br> GALLERY</p>
+                            </span>
+                            <div class="photo_inner">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <span class="photo_neon">
+                                <img src="img/sub07.png"  alt="">
+                                <img src="img/sub07.png" alt="">
+                                <img src="img/sub07.png" alt="">
+                                <img src="img/sub07.png" alt="">
+                                <img src="img/sub07.png" alt="">
+                                <img src="img/sub07.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                <div class="head_le"><img src="img/headlight_left.png" alt=""></div>
+                <div class="head_ri"><img src="img/headlight_right.png" alt=""></div>
+            </div>
+
+            <div>
+                <a href="index.html"><h2>logo</h2></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_1.html">INFO</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_2.html">ACTOR</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="#">GALLERY</a>
+                    </li>
+                    <li>
+                        <span class="icon"><img src="img/icon.png" alt=""></span>
+                        <a href="exsub_4.html">VIDEO</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
+    <script>
+    $(document).ready(function(){
+        // photo_neon img를 순번대로 눌렀을 때 gallery_inner p 가 순서대로 나타나라.
+        $(".photo_neon>img").click(function(){
+
+            let i =$(this).index();
+            console.log(i)
+
+            $(".gallery_inner>p").removeClass("on")
+            $(".gallery_inner>p").eq(i).addClass("on")
+
+
+        })
+
+
+
+
+    })
+    </script>
+
+
+    
+    
+</body>
+</html>
