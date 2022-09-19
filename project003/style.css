@@ -1,0 +1,779 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap');
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* font-family: 'Black Han Sans', sans-serif;
+font-family: 'Nanum Gothic', sans-serif; 
+*/
+
+
+/* 전체설정 */
+* {
+    padding: 0;
+    margin: 0;}
+body {font-family: 'KOTRA_GOTHIC';
+    color: #464646;
+    font-size: 12px;}
+ul, li {list-style: none;}
+a {color: #464646;
+    text-decoration: none;}
+
+
+/* index 설정--------------------------------------------------- */
+header {width: 100%;
+    height: 100%;
+    background-color: #2670A8;
+    color: #fff;
+    position: fixed;}
+.head_in {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20%;
+    padding-bottom: 100%;}
+
+.head_in a {
+    width: 200px;
+    height: auto;
+    position: relative;}
+.head_in a img:nth-child(2) {opacity: 0.3;
+    position: absolute;
+    left: 8px;}
+.head_in a img:nth-child(3){position: absolute;
+    left: 70px;
+    bottom: 13px;}
+
+.head_in h2 {
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: bold;}
+.head_in p {letter-spacing: 2px;
+    padding-top: 10px;}
+
+
+/* main01 설정------------------------------------------------- */
+section {width: 100%;
+    height: 100%;}
+
+.top_bar {width: 100%;
+    height: 10px;
+    padding: 7px 0;
+    background-color: #fff;
+    font-size: 9px;
+    z-index: 50;
+    position: fixed;}
+.top_barinner {width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;}
+.top_barinner p {font-weight: bold;}
+
+.top {
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    font-weight: bold;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgba(165, 217, 239, 0.2);}
+
+.top a {width: 60%;
+    height: 100%;}
+
+.top .util {width: 40%;
+    height: 100%;
+    margin-top: 8px;
+    display: flex;}
+.util .point {display: flex;
+    width: 70%;
+    position: relative;}
+.util .point span {color: #f0a759;}
+.util .point p {position: absolute;
+    top: 5px;
+    left: 30px;
+    font-size: 10px;}
+
+.util .bell {width: 30%;
+    position: relative;}
+.util .bell p {position: absolute;
+    font-size: 5px;
+    top: 0;
+    left: 0;
+    background-color: #f9415c;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;}
+
+
+/* con01 설정--------------------------------------------- */
+.con01 {width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;}
+
+.con01>ul {width: 100%;
+    height: 20px;
+    display: flex;
+    margin: 15px 0;}
+.con01>ul li {font-weight: bold;}
+.con01>ul li a {color: #5f5f5f;
+    padding-left: 5px;}
+
+
+.con01_inner {width: 100%;
+    height: 40px;
+    position: relative;}
+.con01_inner ul {display: flex;
+    width: 100%;
+    margin: 15px 0;
+    justify-content: space-around;}
+.con01_inner li:nth-child(6) b {color: #2670A8;}
+.con01_inner li:nth-child(7) b {color: #f9415c;}
+.con01_inner li p {font-weight: bold;}
+
+.con01_inner span {width: 35px;
+    height: 65px;
+    background-color: rgba(91, 92, 98, 0.1);
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px;
+    top: -15px;
+    left: 72px;}
+
+
+
+/* con02 설정--------------------------------------------- */
+.con02 {width: 100%;
+    height: 120px;
+    padding: 15px 0;
+    background-color: rgba(165, 217, 239, 0.2);
+    position: relative;}
+.con02_inner>p {font-weight: bold;
+    padding-bottom: 20px;
+    color: #2670A8;}
+.con02_inner>a {position: absolute;
+    top: 15px;
+    right: 10%;}
+.con02_inner i {font-size: 8px;}
+
+.con02_inner {width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;}
+.con02_inner ul {width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;}
+.con02_inner li {width: 24%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;}
+.con02_inner img {width: 50px;}
+.con02_inner li p {color: #464646;}
+
+
+
+/* con03 설정--------------------------------------------- */
+.con03 {width: 80%;
+    height: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px 0;
+    position: relative;}
+.con03>p {font-weight: bold;
+    color: #2670A8;}
+.con03>a {position: absolute;
+    right: 0;
+    top: 15px;}
+.con03 i {font-size: 8px;}
+
+.con03_inner {width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 10px 0;}
+.con03_inner span {width: 30%;
+    color: #5fabd6;
+    position: relative;}
+.con03_inner>span>p {position: absolute;
+    font-weight: bold;
+    left: 22px;
+    top: 15px;}
+.con03_inner>span>b {position: absolute;
+    top: 30px;
+    left: 18px;
+    font-size: 18px;}
+
+.con03_inner ul {width: 70%;
+    height: 100%;
+    display: flex;}
+.con03_inner li {font-weight: bold;
+    width: 48%;
+    height: 100%;
+    margin-left: 2%;
+    border-radius: 15px;
+    transform:skew(-5deg);
+    position: relative;}
+.con03_inner li img {width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;}
+
+.con03_txt {position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(91, 92, 98, 0.5);
+    border-radius: 0 0 10px 10px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;}
+
+/* con04 설정--------------------------------------------- */
+.con04 {width: 100%;
+    height: 110px;
+    padding: 15px 0;
+    background-color: rgba(165, 217, 239, 0.2);}
+.con04_inner {width: 80%;
+    height: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;}
+.con04_inner>p {font-weight: bold;
+    color: #2670A8;}
+.con04_inner>a {position: absolute;
+    right: 0;
+    top: 0;}
+.con04_inner i {font-size: 8px;}
+
+.con04_inner ul {width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px 0;}
+.con04_inner li {width: 50%;
+    height: 90%;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;}
+.con04_inner li:nth-child(1) {border-right: 1px dotted #5fabd6;}
+
+.con04_box {position: absolute;
+    font-weight: bold;
+    top: 10px;
+    left: 8px;}    
+.con04_box p {color: #464646;}
+
+.con04_txt {font-size: 8px;
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    left: 65px;
+    color: #5f5f5f;
+    line-height: 20px;}
+.con04_txt i {color: #f9415c;
+    font-weight: bold;}
+.con04_txt b:nth-child(1) {
+    background-color: rgba(165, 217, 239, 0.2);}
+.con04_txt b:nth-child(5) {
+    background-color: rgba(165, 217, 239, 0.2);}
+.con04_inner li:nth-child(1) .con04_txt b:nth-child(1) i {color: #2670A8;}
+.con04_inner li:nth-child(2) .con04_txt b:nth-child(1) i {color: #2670A8;}
+
+
+/* con05 설정--------------------------------------------- */
+.con05 {width: 80%;
+    height: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px 0;
+    position: relative;}
+.con05>p {font-weight: bold;
+    color: #2670A8;}
+.con05>a {position: absolute;
+    right: 0;
+    top: 15px;}
+.con05 i {font-size: 8px;}
+
+.con05_inner {width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 15px 0;}
+
+.con05_inner i {width: 15%;
+    height: 100%;
+    font-size: 30px;
+    color: #5fabd6;
+    padding-top: 15px;}
+
+.con05_inner ul {width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;}
+.con05_inner li {width: 20%;
+    height: 100%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(165, 217, 239, 0.2);
+    padding: 5px;
+    border-radius: 10px;}
+.con05_inner li img {}
+.con05_inner li p {}
+
+
+/* footer 설정--------------------------------------------- */
+.footer {width: 100%;
+    height: 50px;
+    border-radius: 15px 15px 0 0;
+    padding: 8px 0;
+    background-color: rgba(91, 92, 98, 0.1);}
+.footer ul {display: flex;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;}
+.footer li {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #c9c9c9;
+    }
+.footer li:nth-child(1) {border-left: none;}
+
+
+/* main02 설정------------------------------------------------- */
+/* main2_con01 설정 */
+.main2_con01 {width: 80%;
+    height: 220px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px 0;
+    position: relative;}
+.main2_con01>p {font-weight: bold;
+    color: #2670A8;
+    margin-left: 20px;}
+.main2_con01>span {position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2670A8;}
+.main2_con01 article {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(165, 217, 239, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    margin: 10px 0;}
+article p {padding-bottom: 8px;}
+article a {
+    background-color: #2670A8;
+    color: #fff;
+    padding: 3px 30px;
+    border-radius: 15px;}
+
+
+.main2_con01inner {width: 100%;
+    height: 100px;}
+.main2_con01inner ul {width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;}
+.main2_con01inner li {
+    width: 100%;
+    height: 100%;
+    background-color: #5fabd6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center center;}
+.main2_con01inner li:nth-child(1) {
+    background-image: url(img/ad03.png);}
+.main2_con01inner li:nth-child(2) {
+    background-image: url(img/ad02.png);}
+.main2_con01inner li:nth-child(3) {
+    background-image: url(img/ad01.png);}
+
+.main2_btn {position: relative;}
+.main2_con01btn {display: flex;
+    width: 20%;
+    height: 10px;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+    left: 40%;}
+.main2_con01btn span {font-size: 10px;
+        color: #5fabd6;
+        opacity: 1;}
+
+.main2_con01btn_ {display: flex;
+    width: 20%;
+    height: 10px;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+    left: 40%;}
+.main2_con01btn_ span {font-size: 10px;
+    color: #5fabd6;
+    opacity: 0;}
+
+.main2_con01btn_ span.on {opacity: 1;}
+.main2_con01btn span.on {opacity: 0;}
+
+/* main2_con02 설정 */
+.main2_con02 {width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 0;
+    position: relative;}
+.main2_con02>ul {display: flex;
+    width: 100%;
+    height: 20px;
+    color: #5f5f5f;
+    font-weight: bold;
+    justify-content: space-around;}
+.main2_con02>ul>li {
+    width: 20%;
+    height: 100%;
+    border-left: #c9c9c9 1px solid;
+    text-align: center;
+    box-sizing: border-box;}
+.main2_con02>ul>li:nth-child(1){border: none;}
+
+.main2_con02>ul>li.on {color: #2670A8;
+    font-size: 14px;}
+
+.main2_con02inner {width: 100%;
+    height: 550px;
+    position: absolute;
+    opacity: 0;}
+.main2_con02inner.on {opacity: 1;}
+.main2_con02inner ul {width: 100%;
+    height: 100%;
+    padding: 13px 0;}
+.main2_con02inner li {width: 100%;
+    height: 25%;
+    background-color: #c9c9c9;
+    border-radius: 10px;
+    font-size: 10px;
+    margin: 5px 0;
+    position: relative;}
+
+.main2_con02inner li img {width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;}
+
+.main2_con02txt {width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(91, 92, 98, 0.7);
+    color: #fff;}
+.main2_con02txt p {padding: 10px 0 5px 10px;
+    font-weight: bold;}
+.main2_con02txt p i {padding-right: 5px;}
+.main2_con02txt b {padding: 0 50px 0 10px;
+    font-weight: normal;}
+.main2_con02txt b i {padding-right: 3px;}
+.main2_con02txt em {font-style: normal;}
+.main2_con02txt em i {padding-right: 5px;
+    color: #f0a759;}
+
+
+
+/* main03 설정------------------------------------------------- */
+/* main3_con01 설정 */
+.main3_con01 {width: 80%;
+    height: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 0;}
+.main3_con01>div {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/healthcare01.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;}
+.main3_con01 h4 {font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;}
+.main3_con01 a {font-weight: bold;
+    color: #fff;
+    background-color: rgba(91, 92, 98, 0.4);
+    padding: 5px 20px;}
+
+/* main3_con02 설정 */
+.main3_con02 {width: 80%;
+    height: 670px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 0;}
+
+.main3_con02>p {
+    font-weight: bold;
+    color: #2670A8;
+    margin-bottom: 10px;}
+.main3_con02>p i {margin-right: 10px;}
+
+.main3_con02>div {width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    padding: 3% 10% 3% 10%;
+    background-color: rgba(165, 217, 239, 0.2);
+    position: relative;}
+.main3_con02>div img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 5px;
+    }
+.main3_con02>div span {width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f9415c;
+    top: 60%;
+    left: 22%;
+    position: absolute;}
+.main3_con02>div b {font-size: 14px;
+    position: absolute;
+    top: 36%;
+    left: 36%;
+    border-bottom: #a9a9a9 1px dotted;
+    }
+
+
+.main3_con02 ul {width: 100%;
+    height: 600px;
+    margin-top: 20px;}
+.main3_con02 li {width: 80%;
+    height: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    border-bottom: #c9c9c9 1px solid;
+    transition: all 0.8s;}
+
+.main3_con02 li:nth-child(2) {height: 100px;}
+.main3_con02 li:nth-child(4) {height: 100px;}
+
+.main3_con02 li i {font-size: 16px;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    color: #a9a9a9;
+    border: 1px solid #a9a9a9;
+    border-radius: 50%;
+    transition: all 0.8s;}
+.main3_con02 li:nth-child(2) i {padding: 11px 7.5px 5px 8.5px;}
+.main3_con02 li:nth-child(4) i {padding: 11px 7.5px 5px 8.5px;}
+.main3_con02 li:nth-child(5) i {padding: 11px 7.5px 5px 8.5px;}
+
+.main3_con02 li.on {background-color: rgba(186, 185, 187, 0.1) ;}
+.main3_con02 li.on i {color: #5fabd6;
+    border-color: #5fabd6;}
+
+.main3_con02txt {width: 70%;
+    padding: 10px 15px;
+    position: relative;}
+.main3_con02txt b {}
+.main3_con02txt p {padding-top: 10px;
+    font-size: 11px;
+    line-height: 1.5;}
+.main3_con02txt em {position: absolute;
+    top: 11%;
+    right: 0;
+    font-size: 5px;
+    font-style: normal;}
+.main3_con02txt a {display: block;
+    font-size: 5px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    color: #2670A8;}
+
+
+
+/* main04 설정------------------------------------------------- */
+/* main4_con01 설정 */
+.main4_con01{width: 100%;
+    height: 60px;
+    background-color: rgba(165, 217, 239, 0.2);}
+.main4_con01inner {width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 0;
+    display: flex;}
+
+.main4_con01inner .main4_h4 {width: 60%;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 7px;}
+.main4_h4 h4 {background-color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;}
+.main4_h4 i {
+    margin-right: 5px;}
+
+.main4_con01inner ul {width: 40%;
+    height: 100%;}
+.main4_con01inner li {
+    width: 100%;
+    height: 35%;
+    position: relative;
+}
+.main4_con01inner li a {display: block;
+    font-weight: bold;
+    color: #5f5f5f;}
+
+.main4_con01inner li span {
+    font-size: 15px;
+    position: absolute;
+    top: 1px;
+    color: #f0a759;}
+.main4_con01inner li:nth-child(2) p {position: absolute;
+    top: 0;
+    margin-left: 27px;
+    border-bottom: dotted #c9c9c9 1px;}
+
+/* main4_con02 설정 */
+.main4_con02 {width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 0;
+    margin-bottom: 100px;}
+
+.main4_con02 ul {width: 100%;
+    height: 100%;}
+.main4_con02 li {width: 100%;
+    height: 20%;
+    display: flex;
+    border-bottom: 1px dotted #c9c9c9;
+    padding: 10px 0;}
+
+.main4_con02 li img {width: 25%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px #c9c9c9 solid;
+    border-radius: 15px;
+    }
+.main4_con02txt {width: 75%;
+    height: 100%;
+    margin-left: 10px;
+    position: relative;
+    line-height: 20px;}
+.main4_con02txt p {font-size: 8px;
+    color: #a9a9a9;}
+.main4_con02txt b {}
+.main4_con02txt span {font-size: 15px;
+    display: block;
+    color: #f0a759;}
+.main4_con02txt em {font-style: normal;
+    position: absolute;
+    left: 20px;
+    bottom: 2px;}
+
+
+/* main05 설정------------------------------------------------- */
+/* main5_con01 설정 */
+.main5_con01{
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: #c9c9c9 1px solid;}
+
+.main5_con01txt {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;}
+.main5_con01txt a {display: block;
+    color: #a9a9a9;
+    text-decoration: dotted 1px #c9c9c9;}
+.main5_con01img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;}
+
+/* main5_con02 설정 */
+.main5_con02 {width: 100%;
+    height: 60px;
+    padding: 15px 0;
+    background-color: rgba(165, 217, 239, 0.2);}
+.main5_con02inner {width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around;}
+
+.main5_con02inner ul {width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;}
+.main5_con02inner li {text-align: center;}
+.main5_con02inner li:nth-child(1) {font-weight: bold;
+        padding-top: 10px;
+        line-height: 20px;}
+.main5_con02inner li:nth-child(2) {color: #5f5f5f;}
+
+/* main5_con03 설정 */
+.main5_con03 {width: 80%;
+    height: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px 0;}
+
+.main5_con03 i {color: #5f5f5f;
+    margin-right: 5px;
+    font-size: 10px;}
+
+.main5_con03 ul {width: 100%;
+    height: 220px;
+    margin: 10px 0;}
+.main5_con03 li {
+    font-weight: bold;
+    width: 100%;
+    height: 18%;
+    position: relative;
+    margin-bottom: 7px;
+    border-bottom: 1px dotted #c9c9c9;}
+.main5_con03 li:nth-last-child(1) {border-bottom: none;}
+
+.main5_con03 li a {display: block;
+    position: absolute;
+    top: 10px;}
